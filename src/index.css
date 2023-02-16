@@ -1,0 +1,18 @@
+:root {
+  --primary: rgba(255, 255, 255);
+  --secondary: rgba(15, 15, 15, 0.9);
+  --accent: rgba(230, 40, 40, 1);
+  --king-blue: #78819e;
+}
+
+body {
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

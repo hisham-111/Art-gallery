@@ -1,0 +1,56 @@
+.home_author_art_parent {
+  width: 90%;
+  margin: auto;
+}
+
+.home_author_hr {
+  border: 1px solid var(--accent);
+}
+
+.home_author_art_container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2pc 0pc;
+}
+
+.home_author_art_title {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.home_author_art_paragraph {
+  font-size: large;
+}
+
+.home_author_art_img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px rgba(10, 10, 10, 0.1);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(10, 10, 10, 0.1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(10, 10, 10, 0.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .home_author_art_container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2pc 0pc;
+  }
+
+  .home_author_art_title {
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .home_author_art_paragraph {
+    font-size: medium;
+  }
+}

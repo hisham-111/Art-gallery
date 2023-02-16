@@ -1,0 +1,113 @@
+.register-wrapper {
+  position: relative;
+  /* max-width: 430px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 97%;
+  background: var(--primary);
+  padding: 6vh 0vh;
+  margin: auto;
+}
+.register-wrapper .register-title {
+  position: relative;
+  font-size: 23px;
+  font-weight: 600;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.register-input::placeholder {
+  padding: 0 12px;
+}
+
+.register-wrapper .register-form .register-input-box {
+  height: 52px;
+  margin: 1.5pc 0;
+}
+.register-form .register-input-box .register-input {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  outline: none;
+  margin: auto;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--secondary);
+  border: 1.5px solid var(--accent);
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 0px 5px;
+}
+.register-input-box .register-input:focus,
+.register-input-box .register-input:valid {
+  border-color: var(--secondary);
+}
+
+.register-form .register-header {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: -4px;
+}
+.register-input-box.register-button .register-input {
+  color: var(--primary);
+  letter-spacing: 1px;
+  border: none;
+  background: var(--accent);
+  cursor: pointer;
+}
+.register-input-box.register-button .register-input:hover {
+  background: var(--accent);
+}
+
+#register-input-button {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+.register-form .register-text .register-header {
+  color: var(--secondary);
+  width: 100%;
+  text-align: center;
+}
+.register-form .register-text .register-header .register-link {
+  color: #0448c7;
+  text-decoration: none;
+}
+.register-form .register-text .register-header .register-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 372px) {
+  .register-title {
+    text-align: center;
+  }
+}
+
+.register-err {
+  background-color: var(--accent);
+  color: var(--primary);
+  border: 2px solid var(--secondary);
+  padding: 1pc;
+  animation: changeColor 500ms ease-in-out 0s infinite alternate;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 700;
+  box-shadow: 0px 0px 15px 0px rgba(10, 10, 10, 0.1);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(10, 10, 10, 0.1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(10, 10, 10, 0.1);
+}
+
+@keyframes changeColor {
+  from {
+    background-color: var(--accent);
+  }
+
+  to {
+    background-color: var(--secondary);
+  }
+}

@@ -1,0 +1,9 @@
+.dashboard {
+  display: flex;
+}
+
+.dashboardmain-content {
+  width: calc(100% - 16pc);
+  position: absolute;
+  right: 0;
+}

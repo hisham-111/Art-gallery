@@ -1,0 +1,26 @@
+.admin-unauthorised {
+  text-align: center;
+  margin: auto;
+  color: var(--primary);
+  height: 100vh;
+  padding-top: 40vh;
+  font-size: xxx-large;
+  animation: changeColor 500ms ease-in-out 0s infinite alternate;
+  font-weight: 700;
+}
+
+@keyframes changeColor {
+  from {
+    background-color: var(--accent);
+  }
+
+  to {
+    background-color: var(--secondary);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .admin-unauthorised {
+    font-size: xx-large;
+  }
+}

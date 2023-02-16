@@ -1,0 +1,104 @@
+.dashnav-link {
+  text-decoration: none;
+  color: var(--primary);
+  padding: 1pc;
+  margin: 1pc;
+}
+
+.dashnav-whole-nav {
+  background-color: var(--secondary);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 16pc;
+  height: 100vh;
+  display: flex;
+  display: block;
+  flex-direction: column;
+  box-shadow: 0px 5px 15px 0px rgba(10, 10, 10, 0.1);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(10, 10, 10, 0.1);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(10, 10, 10, 0.1);
+}
+
+.dashnav-logo-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin-left: 1pc;
+}
+
+.dashnav-title {
+  color: var(--primary);
+  margin-left: 1pc;
+  font-size: x-large;
+  text-decoration: none;
+
+  font-weight: 700;
+}
+
+.dashnav-navigation {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  align-items: center;
+}
+
+.dashnav-navigation > .dashnav-link {
+  padding: 10px;
+  margin: 1pc 0.5pc;
+}
+
+.dashnav-navigation > .dashnav-link:hover {
+  border-bottom: 1px solid var(--accent);
+  opacity: 0.7;
+}
+
+.dashnav-navigation > .dashnav-link:hover:focus {
+  border-bottom: 2px solid var(--accent);
+  opacity: 1;
+}
+
+.active {
+  border-bottom: 2px solid var(--accent);
+  opacity: 1;
+}
+
+#dashnav-login {
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  padding: 9px 2pc;
+  transition: 0.3s all ease-in-out;
+}
+
+#dashnav-login:hover {
+  background: var(--accent);
+  color: white;
+}
+
+#dashnav-register,
+#dashnav-logout {
+  color: var(--primary);
+  background-color: var(--accent);
+  border-radius: 5px;
+  padding: 9px 2pc;
+  transition: 0.3s all ease-in-out;
+}
+
+#dashnav-register:hover,
+#dashnav-logout:hover {
+  opacity: 0.7;
+}
+
+#dashnav-register:hover:focus,
+#dashnav-logout:hover:focus {
+  opacity: 1;
+}
+
+#dashnav-logout {
+  display: none;
+}
+
+.dashnav-container {
+  display: none;
+}

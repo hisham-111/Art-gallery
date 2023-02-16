@@ -1,0 +1,115 @@
+.home_hero_title {
+  margin-top: 0;
+  font-size: 5pc;
+  text-align: center;
+}
+
+.home_hero_accent_one {
+  color: var(--primary);
+}
+
+.home_hero_accent_two {
+  color: var(--accent);
+  position: relative;
+  top: 5pc;
+  right: 10pc;
+}
+
+.home_hero_section {
+  height: calc(100vh - 9.5vh);
+  background-color: var(--king-blue);
+}
+
+.home_hero_container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home_hero_text {
+  color: var(--primary);
+  font-size: 1.3pc;
+  position: relative;
+  top: 5pc;
+}
+
+.home_hero_link {
+  position: relative;
+  top: 6pc;
+  text-decoration: none;
+  color: var(--primary);
+  background-color: var(--accent);
+  border-radius: 5px;
+  padding: 9px 2pc;
+  transition: 0.3s all ease-in-out;
+}
+
+.home_hero_link:hover {
+  opacity: 0.7;
+}
+
+.home_hero_link:hover:focus {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .home_hero_title {
+    margin-top: auto;
+    font-size: xxx-large;
+  }
+
+  .home_hero_accent_one {
+    color: var(--primary);
+  }
+
+  .home_hero_accent_two {
+    color: var(--accent);
+    position: inline-block;
+    top: 0pc;
+    right: 0pc;
+  }
+
+  .home_hero_section {
+    height: calc(100vh - 9.5vh);
+    background-color: var(--king-blue);
+    display: flex;
+    justify-content: center;
+  }
+
+  .home_hero_container {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .home_wrap_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home_hero_text {
+    color: var(--primary);
+    font-size: large;
+    position: inline-block;
+    top: 0pc;
+    text-align: center;
+  }
+
+  .home_hero_link {
+    position: block;
+    top: 1pc;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--accent);
+    border-radius: 5px;
+    padding: 9px 2pc;
+    transition: 0.3s all ease-in-out;
+  }
+}

@@ -1,0 +1,14 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 2%;
+  padding-left: 2%;
+  align-items: center;
+  width: calc(100vw - 8vw);
+  margin: 1pc auto auto auto;
+}
+
+.footer-text-muted {
+  color: gray;
+}
